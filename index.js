@@ -24,7 +24,7 @@ app.get('/api',(reque, response) => {
 app.post('/api',(request, response) =>{
   const data = reguest.body;
   const timestamp = Date.now();
-  data.time stamp = timestamp;
+  data.timestamp = timestamp;
   database.insert(data);
   response.json(data);
 
